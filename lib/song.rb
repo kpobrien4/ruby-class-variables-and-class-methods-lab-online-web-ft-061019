@@ -31,13 +31,16 @@ class Song
     genre = {}
     self.genres.each do |individual_genre|
      genre[individual_genre] = @@genres.count {|element| element == individual_genre}
-     #genre["rap"] = @@genres.count {|"rap"| "rap" = "rap"}
     end
     return genre
   end
 
   def self.artist_count
     artist = {}
+    self.artists.each do |individual_artist|
+     artist[individual_artist] = @@artists.count {|element| element == individual_artist}
+    end
+    return artist
 
   end
 
